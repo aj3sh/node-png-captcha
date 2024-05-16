@@ -1,4 +1,4 @@
-# node-png-captcha
+# png-captcha
 
 A simple node library for generating PNG captcha images.
 
@@ -13,6 +13,7 @@ npm install png-captcha
 ## Usage
 
 ```js
+import fs from 'fs'
 import pngCaptcha from 'png-captcha'
 
 const options = {
@@ -38,10 +39,13 @@ fs.writeFileSync('captcha.png', captcha.image)
 ### Options
 
 -   `size`: Number of characters in the captcha text.
--   `noise`: Level of noise in the captcha image.
+-   `noise`: Number of noise lines in the captcha image.
 -   `background`: Background color the image.
--   `color`: Enable color in the image.
+-   `color`: `true` to enable color in the image.
+-   `width`: Width of the image.
+-   `height`: Height of the image.
+-   `fontSize`: Text size of captcha text.
 
 ## Acknowledgements
 
-This project uses svg-captcha and @resvg/resvg-js libraries.
+This project uses [svg-captcha](https://www.npmjs.com/package/svg-captcha) and [@resvg/resvg-js](https://www.npmjs.com/package/@resvg/resvg-js) libraries.
