@@ -1,6 +1,6 @@
 {
   "name": "png-captcha",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "A simple node library for generating PNG captcha images.",
   "exports": {
     ".": {
